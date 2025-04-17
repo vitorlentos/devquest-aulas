@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            /*border-collapse: collapse; /* Remove o espaço entre as bordas das células */
+            width: auto; /* Largura total da tabela */
+        }
+        th, td {
+            border: 2px solid black; /* Borda preta de 1px */
+            padding: 8px; /* Espaçamento interno de 8px */
+            text-align: left; /* Alinhamento do texto à esquerda */
+            /*background-color: #dd56ff;*/
+        }
+        th {
+            background-color: hsl(194, 94%, 51%); /* Cor de fundo cinza claro para o cabeçalho */
+        }
+        tfoot {
+            background-color: hwb(155 19% 3%); /* Cor de fundo cinza claro para o rodapé */
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+        <thead><!-- table head -->
+            <tr><!-- table row -->
+                <th>Produto</th><!-- table column -->
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+            </tr>
+        </thead>
+        <tbody><!--table body-->
+            <tr>
+                <td>Produto 1</td><!--table data-->
+                <td>2</td>
+                <td>R$5,00</td>
+                <td rowspan="2">Sim</td>
+            </tr>
+            <tr>
+                <td>Produto 2</td><!--table data-->
+                <td>1</td>
+                <td>R$10,00</td>
+                <!-- <td>Sim</td> -->
+            </tr>
+            <tr>
+                <td>Produto 3</td><!--table data-->
+                <td>5</td>
+                <td>R$2,35</td>
+                <td>Não</td>
+            </tr>
+        </tbody>
+        <tfoot><!--table footer-->
+            <tr>
+                <td colspan="2">Total</td><!--colspan: mescla as colunas-->
+                <td>R$31,75</td>
+                <td>Válido</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
