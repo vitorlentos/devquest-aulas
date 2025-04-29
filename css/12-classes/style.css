@@ -1,0 +1,14 @@
+#descricao {
+    background-color: orange;
+}
+.promocao {
+    background-color: green;
+}
+.descricao {
+    background-color: pink;
+}
+
+.produto {
+    border-top: 5px solid black;
+}
+

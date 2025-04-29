@@ -1,0 +1,18 @@
+html {
+    background-color: gray;
+}
+body {
+    background-color: lightgreen;
+    width: 90vw;
+}
+.pai {
+    background-color: aqua;
+    width: 75%;
+}
+.filha {
+    background-color: pink;
+    width: 90%;
+}
+.title {
+    border-bottom: 5px solid black;
+}

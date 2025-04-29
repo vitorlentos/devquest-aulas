@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: lightpink;
+}
+p {
+    /* margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px; */
+
+    /* margin: 30px; */ /* all sides */
+    /* margin: 30px 20px; */ /* top/bottom right/left */
+
+    margin: 30px 10px 60px 20px; /* top right bottom left */
+    border: 10px solid white;
+    padding: 10px 20px 30px 40px; /* top right bottom left */
+    background-color: aqua;
+    
+}
