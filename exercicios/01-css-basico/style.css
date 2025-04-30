@@ -1,0 +1,11 @@
+.lista-compras {
+    font-size: 18px;
+    border-bottom: 3px solid black;
+    
+}
+.valor{
+    font-weight: bold;
+}
+.total {
+    font-size: 20px;
+}

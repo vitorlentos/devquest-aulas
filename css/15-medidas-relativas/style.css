@@ -3,7 +3,11 @@ html {
 }
 body {
     background-color: lightgreen;
-    width: 90vw;
+    margin: 10px;
+    padding: 2px;
+}
+.body{
+    border: 3px solid black;
 }
 .pai {
     background-color: aqua;
