@@ -9,3 +9,14 @@
 .total {
     font-size: 20px;
 }
+.padrao {
+    background-color: #f5f5f5;
+}
+.destacado {
+    background-color: #f0cce2;
+}
+.texto {
+    padding: 20px;
+    margin: 40px;
+    width: 40%;
+}
