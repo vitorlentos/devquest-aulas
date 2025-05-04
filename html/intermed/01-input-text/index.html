@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Text</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Input Text</h1>
+
+    <h3 class="title">Dados</h3>
+    <label for="nome">Nome:</label>
+    <input type="text" placeholder="Digite seu nome" name="nome" value="João" id="nome" required>
+    <!--
+    /* O atributo required indica que o campo é obrigatório. */
+    /* O atributo placeholder exibe uma dica para o usuário. */
+    /* O atributo name é usado para identificar o campo no envio do formulário. */
+    /* O atributo value define um valor padrão para o campo. Esse valor é o que será resgatado após preenchimento do campo*/
+    /* O atributo id é usado para identificar o campo no DOM. */
+    /* O atributo type define o tipo de campo. No caso, é um campo de texto. */
+    /* O atributo autocomplete indica se o navegador deve sugerir valores previamente inseridos pelo usuário. */
+    -->
+    <br>
+    <label for="email">E-mail: </label> <input type="text" placeholder="Digite seu email" name="email" autocomplete="off">
+    <br>
+    <label for="idade">Idade: </label><input type="number" placeholder="Idade" name="idade" id="idade" min ="0" max="100" step="1" required>
+    <br>
+    <label for="password">Password: </label><input type="password" placeholder="Password" name="password" id="password" required>
+    <br>
+    <input type="submit" value="Enviar formulário" id="enviar">
+    <br>
+
+    <h3 class="title">Linguagens - CheckBox</h3>
+    <!-- Todo grupo de Checkbox e Radiobox devem possuir o mesmo NAME -->
+    <input type="checkbox" name="checkbox" id="html" value="checkbox">
+    <label for="html">Html</label>
+    <input type="checkbox" name="checkbox" id="css" value="checkbox">
+    <label for="css">CSS</label>
+    <input type="checkbox" name="checkbox" id="swift" value="checkbox">
+    <label for="swift">Swift</label>
+
+    <h3 class="title">Gênero - RadioBox</h3>
+    <input type="radio" name="genero" id="m" value="masculino">
+    <label for="m">Masculino</label>
+    <input type="radio" name="genero" id="f" value="masculino">
+    <label for="f">Feminino</label>
+
+    <h3 class="title">Select</h3>
+
+    <label for="filmes">Movie: </label>
+    <select name="filmes" id="filmes">
+        <option value="" selected>Selecione um filme</option>
+        <option value="Senhor dos anéis">1. Senhor dos Anéis</option>
+        <option value="Mad Max">2. Mad Max</option>
+        <option value="Harry Potter">3. Harry Potter</option>
+        <option value="Vingadores">4. Vingadores</option>
+        <!-- O que será enviado ao servidor, é o que está na tag value -->
+    </select>
+
+    <h3 class="title">TextArea</h3>
+    <textarea name="texto" id="texto" maxlength="240" placeholder="Teste" class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error neque eaque ducimus veritatis! Error impedit veritatis maiores explicabo hic aliquam cumque cum eos ullam soluta illum illo consequuntur, ipsam alias?</textarea>
+    
+    <h3 class="title">Button</h3>
+    <button type="button" onclick="alert('Enviado')" class="styled">Botão de Teste</button>
+
+
+    <h3 class="title">Input type button</h3>
+    <input type="button" value="Botão de Teste 2" onclick="alert('Enviado 2')">
+
+</body>
+</html>
